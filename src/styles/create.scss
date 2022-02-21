@@ -1,0 +1,146 @@
+$color_1: #273239;
+
+.form-container {
+  position: relative;
+  height: 520px;
+  max-width: 500px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 20px;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 23px -2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 23px -2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 23px -2px rgba(34, 60, 80, 0.2);
+}
+
+.stepper-content {
+  width: 100%;
+  height: 80vh;
+}
+
+.create_track_input {
+  width: 100%;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  border-radius: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 20px;
+
+  &-text-song {
+    height: 100px;
+  }
+
+  &:focus {
+    cursor: pointer;
+    border-bottom: 1px solid steelblue;
+    box-shadow: 0 1px 0 0 steelblue;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .steps_custom {
+    margin-top: 100px;
+  }
+
+}
+
+.first_section {
+  div {
+    &:nth-child(3) {
+      margin-top: 30px;
+    }
+
+    &:nth-child(1), :nth-child(2) {
+      margin: 20px auto;
+    }
+  }
+}
+
+.files_upload_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+  margin-top: 60px;
+}
+
+.upload_file {
+  text-align: center;
+
+  &_button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+      opacity: 0.7;
+      background-color: transparent;
+    }
+  }
+
+  &_label {
+    font-family: "DejaVu Sans Mono";
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: 0.7rem;
+    margin: 0 auto;
+  }
+}
+
+.button {
+  &_first_step {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &_next_step {
+    border: 1px solid $color_1;
+    font-size: 11pt;
+    padding: 6px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: $color_1;
+    background-color: transparent;
+    transition: background .2s;
+    font-family: "DejaVu Sans Mono";
+    margin-bottom: 0;
+
+    &:hover {
+      background-color: $color_1;
+      color: white;
+    }
+  }
+}
+
+.icon {
+  &_completed {
+    color: $color_1;
+    width: 2em;
+    height: 2em;
+    margin: .25rem;
+    line-height: 1em;
+  }
+
+  &_upload {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    color: $color_1;
+
+  }
+}
+
+
