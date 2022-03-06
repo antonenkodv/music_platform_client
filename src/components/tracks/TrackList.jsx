@@ -18,6 +18,7 @@ const TrackList = () => {
     }, [allTracksData])
 
     const {playTrack, pauseTrack, setActiveTrack} = useActions()
+
     const play = (e, track) => {
         e.stopPropagation()
         setActiveTrack(track)
@@ -32,7 +33,7 @@ const TrackList = () => {
             <div className={'tracklist_container'}>
                 {
                     allTracksData && allTracksData.getAllTracks.length && allTracksData.getAllTracks.map(track =>
-                        <Row className={'tracklist_item'} onClick={(e) => play(e, track)}>
+                        <Row key = {Math.random()*100} className={'tracklist_item'} onClick={(e) => play(e, track)}>
                             <Col lg={2}
                                  className={'track_icon_block'}> {active && active.name === track.name ?
                                 <PauseFill className={'track_play_icon'}/> :
